@@ -1,0 +1,7 @@
+@import '../utils/-\ vars.scss'
+
+.hover{
+    transition: $efect-transition;
+    color: $focus-color;
+    background: $hover-color;
+}

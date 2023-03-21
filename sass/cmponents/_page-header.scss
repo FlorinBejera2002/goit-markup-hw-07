@@ -31,7 +31,9 @@
                  fill: var(--text-contact);
                 
                  &:hover{
-                    
+                    transition: $efect-transition;
+                    color: $focus-color;
+                    background: $hover-color;
                  }
             }
         }
