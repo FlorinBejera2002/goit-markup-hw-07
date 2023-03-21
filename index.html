@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="sass/main.scss">
     <title>WebStudio</title>
 </head>
 
@@ -106,78 +106,79 @@
         <!--hero.section-->
         <section class="section">
             <div class="container">
-                <h1 class="section__title">EFFECTIVE SOLUTIONS FOR
+                <h1 class="section__title">
+                    EFFECTIVE SOLUTIONS FOR
                     <br>YOUR BUSINESS
                 </h1>
-                <button data-modal-open class="button-hero-section" type="button">Request our service</button>
+                <button data-modal-open class="section__button" type="button">Request our service</button>
             </div>
         </section>
         <!--indication.section-->
-        <section class="indication-section ">
+        <section class="section ">
             <div class="container">
-                <ul class="indication-list unstyled-list ">
-                    <li class="indication-container">
-                        <div class="indication-icon-item">
+                <ul class="section__indication ">
+                    <li class="indication__item">
+                        <div class="item__icon">
                             <svg style=" width: 70px; height: 70px">
                                 <use href="./images/icons.svg#icon-antenna-1"></use>
                             </svg>
                         </div>
-                        <h3>ATTENTION TO DETAILS</h3>
-                        <p>We go into all the details and processes
+                        <h3 class="item__title">ATTENTION TO DETAILS</h3>
+                        <p class="item__text">We go into all the details and processes
                             <br> of your business to develop a
                             <br> customized solution.
                         </p>
                     </li>
                 </ul>
-                <ul class="indication-list unstyled-list">
-                    <li>
-                        <div class="indication-icon-item">
+                <ul class="section__indication">
+                    <li class="indication__item">
+                        <div class="item__icon">
                             <svg style=" width: 70px; height: 70px">
                                 <use href="./images/icons.svg#icon-clock-1"></use>
                             </svg>
                         </div>
-                        <h3>PUNCTUALITY</h3>
+                        <h3 class="item__title">PUNCTUALITY</h3>
                         <p>With us, you can feel safe and secure.
                             <br> An important principle of the company:
                             <br> respect your time and deadlines.
-                        </p>
+                        </p class="item__text"> 
                     </li>
                 </ul>
-                <ul class="indication-list unstyled-list">
-                    <li>
-                        <div class="indication-icon-item">
+                <ul class="section__indication">
+                    <li class="indication__item">
+                        <div class="item__icon">
                             <svg style=" width: 70px; height: 70px">
                                 <use href="./images/icons.svg#icon-diagram-1"></use>
                             </svg>
                         </div>
-                        <h3>PLANNING</h3>
+                        <h3 class="item__title">PLANNING</h3>
                         <p>You will be able to observe and
                             <br> participate in every phase of solution
                             <br> development and implementation.
-                        </p>
+                        </p class="item__text">
                     </li>
                 </ul>
-                <ul class="indication-list unstyled-list">
-                    <li>
-                        <div class="indication-icon-item">
+                <ul class="section__indication">
+                    <li class="indication__item"> 
+                        <div class="item__icon">
                             <svg style=" width: 70px; height: 70px">
                                 <use href="./images/icons.svg#icon-astronaut-1"></use>
                             </svg>
                         </div>
-                        <h3>mODERN TECHNOLOGIES</h3>
+                        <h3 class="item__title">mODERN TECHNOLOGIES</h3>
                         <p>We use innovative tools to solve
                             <br> assigned tasks. It's time to simplify
                             <br> work processes.
-                        </p>
+                        </p class="item__text">
                     </li>
                 </ul>
             </div>
         </section>
         <!--What we do section-->
-        <section class="section what-we-do-section">
+        <section class="section">
             <div class="container">
-                <h2 class="title-section">What we do</h2>
-                <ul class=" unstyled-list section-images">
+                <h2 class="section__subtitle">What we do</h2>
+                <ul class="section__images">
                     <li>
                         <img src="images/Laptop1.jpg" alt="laptop1" width="370" height="294">
                     </li>
@@ -191,13 +192,13 @@
             </div>
         </section>
         <!--Our Team section-->
-        <section class="section our-team">
+        <section class="section">
             <div class="container">
-                <h2 class="title-section">Our Team</h2>
-                <div class="our-team-section">
-                    <div>
-                        <img src="images/ChristopherWalker.jpg" alt="Christopher Walker" width="270" height="260">
-                        <h3>Christopher Walker</h3>
+                <h2 class="section__subtitle">Our Team</h2>
+                <div class="section__team">
+                    <div class="team-card">
+                        <img class="card__image" src="images/ChristopherWalker.jpg" alt="Christopher Walker" width="270" height="260">
+                        <h3 class="card__name">Christopher Walker</h3>
                         <p>Product Designer</p>
                         <ul class="our-team-icons unstyled-list">
                             <li class="icon-item">
