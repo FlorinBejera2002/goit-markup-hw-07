@@ -28,9 +28,7 @@
 
             &__mail,
             &__phone{
-                 fill: $text-contact;
-                
-                 
+                 fill: var(--text-contact);
             }
          }
     }
