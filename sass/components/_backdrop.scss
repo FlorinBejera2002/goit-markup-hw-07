@@ -1,5 +1,10 @@
 @import '../utils/vars';
 
+.global-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .form-item input:focus,
 .form-item textarea:focus {
     transition: $efect-transition;
@@ -27,7 +32,7 @@
     font-size: 12px;
     line-height: 1, 16;
     letter-spacing: 0.01em;
-    color: var(--text-contact);
+    color: $text-contact ;
 }
 
 .form-item input {
