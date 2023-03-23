@@ -75,9 +75,7 @@
 
 .form-item-checkbox,
 .form-item-checkbox a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @extend .global-center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -203,14 +201,5 @@
 }
 
 .title-modal {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin: 0%;
-    color: #212121;
-    padding-bottom: 12px;
+    
 }
