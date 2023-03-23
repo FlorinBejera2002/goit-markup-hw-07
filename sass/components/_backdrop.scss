@@ -1,5 +1,20 @@
 @import '../utils/vars';
 
+.form-item input:focus,
+.form-item textarea:focus{
+        transition: $efect-transition;
+    border:1px solid var(--hover-color);
+}
+
+.form-item input:focus+svg{
+   fill: var(--hover-color);
+transition: $efect-transition;
+}
+
+.form-item input {
+    outline: none;
+}
+
 .form-item {
     display: flex;
     flex-direction: column;
@@ -13,30 +28,6 @@
     line-height: 1, 16;
     letter-spacing: 0.01em;
     color: var(--text-contact);
-
-    &.input:focus,
-    .textarea:focus {
-        transition: var(--efect-transition);
-        border: 1px solid var(--hover-color);
-    }
-
-    &.input {
-        outline: none;
-
-
-        &:focus+svg {
-            fill: var(--hover-color);
-            transition: var(--efect-transition);
-        }
-    }
-
-    &.input {
-        padding-left: 42px;
-        width: 448px;
-        height: 40px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-    }
 }
 
 .form-item input {
@@ -161,7 +152,7 @@
     height: 100%;
     z-index: 99;
     opacity: 1;
-    transition: var(--efect-transition);
+    transition: $efect-transition;
 }
 
 .modal {
@@ -193,7 +184,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     top: 8px;
     right: 8px;
-    transition: var(--efect-transition);
+    transition: $efect-transition;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,9 +192,9 @@
 }
 
 .close-back:hover {
-    transition: var(--efect-transition);
+    transition: $efect-transition;
     cursor: pointer;
-    fill: var(--hover-color);
+    fill: $hover-color;
 }
 
 .title-modal {

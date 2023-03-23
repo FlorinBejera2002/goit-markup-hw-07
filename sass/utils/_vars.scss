@@ -1,14 +1,13 @@
-.root{--hover-color: #2196F3;
---focus-color: #FFFFFF;
---border-color: #EEEEEE;
---logo-color: #000000;
---text-contact: #757575;
---contact-text-footer: rgba(255, 255, 255, 0.6);
---footer-background: #2F303A;
---background-section: #F5F4FA;
---color-section: #E5E5E5;
---icon-color: #212121;
---color-icons: #AFB1B8;
---header-color: #ECECEC;
---efect-transition: var(--efect-transition);
-}
+$hover-color: #2196F3;
+$focus-color: #FFFFFF;
+$border-color: #EEEEEE;
+$logo-color: #000000;
+$text-contact: #757575;
+$contact-text-footer: rgba(255, 255, 255, 0.6);
+$footer-background: #2F303A;
+$background-section: #F5F4FA;
+$color-section: #E5E5E5;
+$icon-color: #212121;
+$color-icons: #AFB1B8;
+$header-color: #ECECEC;
+$efect-transition: var(--efect-transition);
