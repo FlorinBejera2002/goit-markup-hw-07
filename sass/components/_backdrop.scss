@@ -1,17 +1,5 @@
 @import '../utils/vars';
 
-
-.form-item input:focus,
-.form-item textarea:focus {
-    transition: var(--efect-transition);
-    border: 1px solid var(--hover-color);
-}
-
-.form-item input:focus+svg {
-    fill: var(--hover-color);
-    transition: var(--efect-transition);
-}
-
 .form-item {
     display: flex;
     flex-direction: column;
@@ -26,13 +14,28 @@
     letter-spacing: 0.01em;
     color: var(--text-contact);
 
+    &.input:focus,
+    .textarea:focus {
+        transition: var(--efect-transition);
+        border: 1px solid var(--hover-color);
+    }
+
     &.input {
         outline: none;
+
 
         &:focus+svg {
             fill: var(--hover-color);
             transition: var(--efect-transition);
         }
+    }
+
+    &.input {
+        padding-left: 42px;
+        width: 448px;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
     }
 }
 
