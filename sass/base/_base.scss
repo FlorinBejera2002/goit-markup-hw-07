@@ -1,6 +1,30 @@
 @import '../utils/vars';
 
-.logo{
+.unstyled {
+    list-style: none;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hover {
+    transition: $efect-transition;
+    cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.logo {
     text-decoration: none;
     color: $hover-color;
     font-family: 'Raleway' sans-serif;
@@ -11,8 +35,8 @@
     display: flex;
     padding-right: 93px;
 
-    &::after{
+    &::after {
         content: "Studio";
-        color:$logo-color;
+        color: $logo-color;
     }
 }
