@@ -1,0 +1,35 @@
+@import '../utils/vars';
+@import '../base/base';
+
+.section__subtitle {
+    @extend .global-center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1, 16;
+    letter-spacing: 0.03em;
+    color: $icon-color;
+}
+
+.grid {
+    @extend .unstyled;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .grid__item{
+        @extend .global-center;
+        width: 170px;
+        height: 92px;
+        fill: $color-icons;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+
+        &:hover{
+            @extend .hover;
+            fill: $hover-color;
+            border-color: $hover-color;
+        }
+    }
+}

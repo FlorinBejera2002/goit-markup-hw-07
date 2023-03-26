@@ -1,3 +1,32 @@
 @import '../utils/vars';
 @import '../base/base';
 
+.icon {
+    display: flex;
+    padding: auto 32px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .icon__item {
+        background-color: none;
+        @extend .global-center;
+        stroke-width: 0;
+        fill:$color-icons;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        &:hover {
+            @extend .hover;
+            fill:$focus-color;
+            background-color:$hover-color;
+        }
+
+        .item__svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+}
