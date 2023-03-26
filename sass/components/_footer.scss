@@ -1,0 +1,67 @@
+@import '../utils/vars';
+@import '../base/base';
+
+.footer {
+    background: $footer-background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: auto;
+    height: 251px;
+
+    .footer-section {
+        display: flex;
+        gap: 94px;
+
+        .section__footer {
+            .--logo-footer {
+                &::after {
+                    content: "Studio";
+                    color: $focus-color;
+                }
+            }
+
+            .footer__address {
+                display: flex;
+
+                .address__contact {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0.03em;
+
+                    .address__item {
+                        .item__location {
+                            .location {
+                                color: $focus-color;
+                            }
+
+                            .item__location a {
+
+                                &:focus,
+                                &:hover {
+                                    @extend .hover;
+                                    color: $hover-color
+                                }
+                            }
+                        }
+
+                        .item__mail {
+                            .mail {
+                                color: $contact-text-footer;
+                            }
+                        }
+
+                        .item__phone {
+                            .phone {
+                                color: $contact-text-footer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
