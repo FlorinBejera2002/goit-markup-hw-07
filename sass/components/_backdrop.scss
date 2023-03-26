@@ -95,20 +95,23 @@
 }
 
 
-.form-modal {
+.modal__form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    .input[type="checkbox"]:checked+.replace__checkbox {
+        background: $hover-color;
+        border-color: $hover-color;
+    }
+
+    .input[type="checkbox"] {
+        display: none;
+    }
 }
 
-.form-modal input[type="checkbox"]:checked+.replace-checkbox {
-    background: $hover-color;
-    border-color: $hover-color;
-}
 
-.form-modal input[type="checkbox"] {
-    display: none;
-}
+
 
 .terms svg {
     position: static;
