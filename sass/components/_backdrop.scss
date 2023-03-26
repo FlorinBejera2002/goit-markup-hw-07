@@ -94,6 +94,9 @@
     color: rgba(33, 150, 243, 1);
 }
 
+.modal__form input[type="checkbox"] {
+    display: none;
+}
 
 .modal__form {
     display: flex;
@@ -108,40 +111,35 @@
     .input[type="checkbox"] {
         display: none;
     }
+
+    .input[type="checkbox"]:checked+.replace__checkbox svg {
+        opacity: 1;
+    }
+
+    .form__button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1, 87;
+        border: none;
+        letter-spacing: 0.06em;
+        color: $focus-color;
+        padding: 10px 80px;
+        background: $hover-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        @extend .global-center;
+        margin: 30px auto 0px auto;
+    }
 }
-
-
 
 
 .terms svg {
     position: static;
     opacity: 0;
-    fill: var(--focus-color);
+    fill: $focus-color;
 }
-
-.form-modal input[type="checkbox"]:checked+.replace-checkbox svg {
-    opacity: 1;
-}
-
-.button-send {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1, 87;
-    border: none;
-    letter-spacing: 0.06em;
-    color: var(--focus-color);
-    padding: 10px 80px;
-    background: $hover-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto 0px auto;
-}
-
 
 .backdrop {
     display: flex;
@@ -154,59 +152,58 @@
     z-index: 99;
     opacity: 1;
     transition: $efect-transition;
+
+    .modal {
+        padding: 40px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 528px;
+        height: 581px;
+        margin: 0px auto;
+        background-color: $focus-color;
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+
+        .modal__close-back {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: $focus-color;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            top: 8px;
+            right: 8px;
+            transition: $efect-transition;
+            @extend .global-center;
+            fill: $logo-color;
+
+            &:hover {
+                transition: $efect-transition;
+                cursor: pointer;
+                fill: $hover-color;
+            }
+        }
+
+        .modal__title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin: 0%;
+            color: $icon-color;
+            padding-bottom: 12px;
+        }
+    }
 }
 
-.modal {
-    padding: 40px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 528px;
-    height: 581px;
-    margin: 0px auto;
-    background-color: var(--focus-color);
-    transform: translate(-50%, -50%) scale(1);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
 
 .is-hidden {
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
-}
-
-.close-back {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: var(--focus-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    top: 8px;
-    right: 8px;
-    transition: $efect-transition;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: $logo-color;
-}
-
-.close-back:hover {
-    transition: $efect-transition;
-    cursor: pointer;
-    fill: $hover-color;
-}
-
-.title-modal {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin: 0%;
-    color: $icon-color;
-    padding-bottom: 12px;
 }
