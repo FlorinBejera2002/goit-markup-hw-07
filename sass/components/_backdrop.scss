@@ -1,15 +1,25 @@
 @import '../utils/vars';
 
-.global-center{
+.global-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.form-item input:focus,
-.form-item textarea:focus {
-    transition: $efect-transition;
-    border: 1px solid $hover-color;
+
+.form-item {
+
+    &.input:focus,
+    &.textarea:focus {
+        transition: $efect-transition;
+        border: 1px solid $hover-color;
+    }
+     &.input:focus+svg {
+        fill: $hover-color;
+        transition: $efect-transition;
+    }
+
 }
+
 
 .form-item input:focus+svg {
     fill: $hover-color;
@@ -75,7 +85,7 @@
 
 .form-item-checkbox,
 .form-item-checkbox a {
-   @extend .global-center;
+    @extend .global-center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -191,7 +201,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #000000;
+    fill: $logo-color;
 }
 
 .close-back:hover {
@@ -201,5 +211,14 @@
 }
 
 .title-modal {
-    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0%;
+    color: $icon-color;
+    padding-bottom: 12px;
 }
