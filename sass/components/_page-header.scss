@@ -16,7 +16,7 @@
     &.__list {
       display: flex;
 
-      &.__item,
+      &__item,
       __contact{
         display: flex;
         gap: 50px;
@@ -24,7 +24,7 @@
       }
     }
 
-    &.__contact {
+    &__contact {
       display: flex;
       gap: 50px;
 
