@@ -34,43 +34,52 @@
         }
     }
 
+    .item__svg {
+        position: absolute;
+        bottom: 11px;
+        margin-left: 12px;
+    }
+
+    .item__textarea {
+        outline: none;
+        resize: none;
+        width: 448px;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding: 12px 16px;
+
+        &::placeholder {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1, 16;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+
+
+
 }
 
 
-.form-item input {}
-
-.form-item svg {
-    position: absolute;
-    bottom: 11px;
-    margin-left: 12px;
-}
-
-.form-item textarea {
-    outline: none;
-    resize: none;
-    width: 448px;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
-}
-
-.form-item textarea::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1, 16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.form-item-checkbox {
+.form__item-checkbox {
     color: rgba(117, 117, 117, 1);
+
+    .replace__checkbox {
+        @extend .global-center;
+        margin-right: 7px;
+        width: 16px;
+        height: 16px;
+        border: 2px solid var(--icon-color);
+        border-radius: 2px;
+    }
 }
 
-.form-item-checkbox,
-.form-item-checkbox a {
+.form__item-checkbox,
+.form__item-checkbox a {
     @extend .global-center;
     font-family: 'Roboto';
     font-style: normal;
@@ -80,21 +89,11 @@
     letter-spacing: 0.03em;
 }
 
-.form-item-checkbox a {
+.form__item-checkbox a {
     padding-left: 5px;
     color: rgba(33, 150, 243, 1);
 }
 
-.replace-checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 7px;
-    width: 16px;
-    height: 16px;
-    border: 2px solid var(--icon-color);
-    border-radius: 2px;
-}
 
 .form-modal {
     display: flex;
