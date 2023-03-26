@@ -13,5 +13,9 @@
     margin-bottom: 50px; 
 }
 .section__images{
-    
+    @extend .unstyled;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }

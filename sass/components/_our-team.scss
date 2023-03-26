@@ -1,0 +1,37 @@
+@import '../utils/vars';
+@import '../base/base';
+
+.--our-team {
+    background-color: $background-section;
+
+
+    .section__team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        .team-teammate {
+            background: $focus-color;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+
+            .teammate__image {
+                width: 270px;
+                height: 260px;
+            }
+
+            .teammate__name {
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+                list-style: none;
+            }
+
+            .teammate__occupation {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
