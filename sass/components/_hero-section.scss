@@ -1,9 +1,10 @@
 @import '../utils/vars';
 @import '../base/base';
 
-.section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/Overlay.jpg') no-repeat;
+
+.--hero__section {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/Overlay.jpg) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     box-sizing: border-box;
@@ -41,7 +42,7 @@
             color: $focus-color;
             margin-left: 500px;
 
-            &:hover{
+            &:hover {
                 transition: $efect-transition;
                 color: $focus-color;
                 background: $hover-color;

@@ -1,5 +1,11 @@
 @import '../utils/vars';
 
+.global-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .unstyled {
     list-style: none;
 

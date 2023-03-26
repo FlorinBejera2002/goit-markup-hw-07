@@ -1,0 +1,43 @@
+@import '../utils/vars';
+@import '../base/base';
+
+.indication {
+    justify-content: center;
+    display: flex;
+
+    .section__indication {
+        @extend .unstyled;
+
+        .indication__item {
+            .item__icon {
+                @extend .global-center;
+                width: 270px;
+                height: 120px;
+                background: $background-section;
+                border-radius: 4px;
+                fill: $icon-color;
+            }
+        }
+
+        .item__title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1, 14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+
+        .item__text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: $text-contact;
+        }
+    }
+}
