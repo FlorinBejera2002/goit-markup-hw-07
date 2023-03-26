@@ -38,7 +38,7 @@
 
           &::after {
             content: "";
-            border: 2px solid var(--hover-color);
+            border: 2px solid $hover-color;
             width: 100%;
             position: absolute;
             bottom: -46px;
@@ -54,6 +54,8 @@
       @extend .unstyled;
       display: flex;
       gap: 50px;
+      justify-content: flex-end;
+      flex-grow: 1;
 
 
       .contact__mail,
