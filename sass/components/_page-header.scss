@@ -1,36 +1,49 @@
 @import '../utils/vars';
 @import '../base/base';
 
-.page-header {
-  border-bottom: 1px solid var(--header-color);
+.page__header {
+  border-bottom: 1px solid $header-color;
 
-  &.__navigation {
+  .header__navigation {
     font-weight: 500;
     font-size: 14px;
     line-height: 1, 14;
     letter-spacing: 0.02em;
-    background: var(--focus-color);
+    background: $focus-color;
     display: flex;
     align-items: center;
 
-    &.__list {
+    .navigation__list {
       display: flex;
 
-      &__item,
-      __contact{
+      .list__item {
         display: flex;
         gap: 50px;
-      
+
+        .--border__after {
+          position: relative;
+
+          &::after {
+            content: "";
+            border: 2px solid var(--hover-color);
+            width: 100%;
+            position: absolute;
+            bottom: -46px;
+            border-radius: 4px;
+            visibility: visible;
+            left: 0;
+          }
+        }
       }
     }
 
-    &__contact {
+    .navigation__contact {
       display: flex;
       gap: 50px;
 
-      &__mail,
-      &__phone {
-        fill: var(--text-contact);
+      .contact__mail,
+      .contact__phone {
+        fill: $text-contact;
       }
     }
   }

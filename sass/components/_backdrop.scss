@@ -58,8 +58,10 @@
             letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
         }
-        &:focus{
-            color: $hover-color;
+
+        &:focus {
+            transition: $efect-transition;
+            border: 1px solid $hover-color;
         }
     }
 

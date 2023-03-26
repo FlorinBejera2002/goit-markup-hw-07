@@ -2,7 +2,7 @@
 
 .logo{
     text-decoration: none;
-    color: var(--hover-color);
+    color: $hover-color;
     font-family: 'Raleway' sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -13,6 +13,6 @@
 
     &::after{
         content: "Studio";
-        color:blue;
+        color:$logo-color;
     }
 }
