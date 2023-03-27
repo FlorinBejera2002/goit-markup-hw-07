@@ -6,7 +6,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     width: auto;
-    height: 251px;
 
     .footer-section {
         display: flex;
@@ -83,7 +82,14 @@
                 }
 
                 .--icon-footer {
-                    .--item-footer {}
+                    .--item-footer {
+                        background: rgba(255, 255, 255, 0.1);
+                        fill: $focus-color;
+
+                        &:hover {
+                            background-color: $hover-color;
+                        }
+                    }
                 }
             }
         }
