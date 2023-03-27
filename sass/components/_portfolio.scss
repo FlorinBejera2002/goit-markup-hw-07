@@ -57,6 +57,11 @@
             &:hover .overlay {
                 transform: translateY(0px);
             }
+
+            .image__card {
+                width: 370px;
+                height: 294px;
+            }
         }
 
         .overlay {
