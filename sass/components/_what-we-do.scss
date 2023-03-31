@@ -1,7 +1,7 @@
 @import '../utils/vars';
 @import '../base/base';
 
-.section__subtitle{
+.section__subtitle {
     @extend .global-center;
     font-family: 'Roboto';
     font-style: normal;
@@ -9,13 +9,20 @@
     font-size: 36px;
     line-height: 1, 16;
     letter-spacing: 0.03em;
-    color:$icon-color;
-    margin-bottom: 50px; 
+    color: $icon-color;
+    margin-bottom: 50px;
 }
-.section__images{
+
+.section__images {
     @extend .unstyled;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+}
+
+@media screen and (min-width:480px) {
+    .--what-we-do {
+        display: none;
+    }
 }

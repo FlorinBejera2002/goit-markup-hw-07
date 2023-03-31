@@ -82,3 +82,9 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .list__item {
+    display: none;
+  }
+}
